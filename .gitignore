@@ -1,0 +1,10 @@
+/.idea
+/.vscode
+/temp
+/vendor
+/node_modules
+.env
+*.swp
+*.sublime-*
+*.log
+package-lock.json

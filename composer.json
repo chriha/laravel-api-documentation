@@ -1,0 +1,38 @@
+{
+    "name": "chriha/laravel-api-documentation",
+    "description": "description",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christopher Hartmann",
+            "email": "chriha84@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "symfony/yaml": "^5.2",
+        "illuminate/http": "^7.0|^8.0",
+        "illuminate/support": "^7.0|^8.0",
+        "illuminate/routing": "^7.0|^8.0",
+        "illuminate/view": "^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chriha\\ApiDocumentation\\": "src",
+            "Chriha\\ApiDocumentation\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chriha\\ApiDocumentation\\ApiDocumentationServiceProvider"
+            ]
+        }
+    },
+    "prefer-stable": true,
+    "require-dev": {
+        "phpunit/phpunit": "^9.1",
+        "orchestra/testbench": "^5.0"
+    }
+}

@@ -1,0 +1,24 @@
+name: Versioning
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  versioning:
+    name: Create New Version
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install Plugins
+        run: npm i @semantic-release/changelog @semantic-release/git @semantic-release/exec -D
+      - name: Create Release
+        run: npx semantic-release@^17.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
