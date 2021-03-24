@@ -75,6 +75,23 @@ By default, the documentation uses the `web`-, the API info endpoint the `api`-m
 configuration by changing the `middleware` key.
 
 
+### Hiding information
+
+If you want to hide keys from the info endpoint (e.g. `/api/v1`), you can specify those in the configuration
+under `specifications.hide` via "dot" notation.
+
+```php
+    'specifications' => [
+        'hide'   => [
+            'v1' => [
+                'contact.email',
+                'description',
+            ]
+        ],
+    ],
+```
+
+
 ## Development
 
 ### Conventional Commits

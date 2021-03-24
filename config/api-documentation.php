@@ -19,6 +19,17 @@ return [
          * Default: [version].yml
          */
         'format' => '[version].yml',
+        /**
+         * Specify the keys for each specification, that you don't
+         * want to be visible in the info endpoint (e.g. /api/v1) using
+         * "dot" notation.
+         */
+        'hide'   => [
+            //'v1' => [
+            //    'contact.email',
+            //    'description',
+            //]
+        ],
     ],
     'middleware'     => [
         /**

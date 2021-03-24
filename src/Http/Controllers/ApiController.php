@@ -5,6 +5,7 @@ namespace Chriha\ApiDocumentation\Http\Controllers;
 use Chriha\ApiDocumentation\Support\File;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Arr;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Yaml\Yaml;
 
@@ -25,6 +26,10 @@ class ApiController extends BaseController
         }
 
         $spec = Yaml::parseFile(File::path($version), Yaml::PARSE_OBJECT);
+
+        foreach (config("api-documentation.specifications.hide.{$version}", []) as $key) {
+            Arr::forget($spec['info'], $key);
+        }
 
         return new JsonResponse($spec['info'] ?? ['version' => 'undefined']);
     }
