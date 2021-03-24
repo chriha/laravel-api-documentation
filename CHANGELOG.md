@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/chriha/laravel-api-documentation/compare/v1.0.0...v1.1.0) (2021-03-24)
+
+
+### Features
+
+* add ability to hide information for info endpoints ([0685af4](https://github.com/chriha/laravel-api-documentation/commit/0685af426a37112546ed65dafea6a246aff7ad41))
+
 # 1.0.0 (2021-03-17)
 
 
