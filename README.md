@@ -7,6 +7,12 @@ This package helps providing a parsed Swagger documentation by using your OpenAP
 
 ## Getting Started
 
+### Installation
+
+````shell
+composer require chriha/laravel-api-documentation
+````
+
 ### Path to your specification
 
 By default, the OpenAPI YAML specifications should be inside `./resources/api/...`. In this directory, you can
@@ -69,9 +75,28 @@ By default, the documentation uses the `web`-, the API info endpoint the `api`-m
 configuration by changing the `middleware` key.
 
 
+### Hiding information
+
+If you want to hide keys from the info endpoint (e.g. `/api/v1`), you can specify those in the configuration
+under `specifications.hide` via "dot" notation.
+
+```php
+    'specifications' => [
+        'hide'   => [
+            'v1' => [
+                'contact.email',
+                'description',
+            ]
+        ],
+    ],
+```
+
+
 ## Development
 
 ### Conventional Commits
+
+Please use conventional commits for automated semantic versioning, if you submit your merge request.
 
 
 ### Dry Run Semantic Release
