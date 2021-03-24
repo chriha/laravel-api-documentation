@@ -7,6 +7,12 @@ This package helps providing a parsed Swagger documentation by using your OpenAP
 
 ## Getting Started
 
+### Installation
+
+````shell
+composer require chriha/laravel-api-documentation
+````
+
 ### Path to your specification
 
 By default, the OpenAPI YAML specifications should be inside `./resources/api/...`. In this directory, you can
@@ -72,6 +78,8 @@ configuration by changing the `middleware` key.
 ## Development
 
 ### Conventional Commits
+
+Please use conventional commits for automated semantic versioning, if you submit your merge request.
 
 
 ### Dry Run Semantic Release
