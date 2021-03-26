@@ -1,4 +1,6 @@
-# Provide a Swagger documentation
+# Automatically Provide A Swagger Documentation For Your Specs
+
+![screenshot](https://user-images.githubusercontent.com/53882/112632601-9d1a6e80-8e38-11eb-8e5b-8a2432c51336.png)
 
 ![version](https://img.shields.io/github/v/release/chriha/laravel-api-documentation)
 
@@ -34,7 +36,7 @@ info:
 ...
 ```
 
-... will result in the following response:
+... will result to the following response body:
 
 ```json
 {
@@ -49,7 +51,7 @@ info:
 
 ### Documentation
 
-Will be available at `/docs/api/v1` and the file at `/docs/api/v1/file`.
+Will be available via the URI `/docs/api/[VERSION]` and the file at `/docs/api/[VERSION]/file`.
 
 
 ## Configuration
