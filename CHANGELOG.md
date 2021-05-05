@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/chriha/laravel-api-documentation/compare/v1.1.0...v1.2.0) (2021-05-05)
+
+
+### Features
+
+* cache API version info endpoint ([e40e009](https://github.com/chriha/laravel-api-documentation/commit/e40e0096c54a2665608dde443274f6ec1e160708))
+
 # [1.1.0](https://github.com/chriha/laravel-api-documentation/compare/v1.0.0...v1.1.0) (2021-03-24)
 
 
