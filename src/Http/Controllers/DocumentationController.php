@@ -27,8 +27,19 @@ class DocumentationController extends BaseController
         return View::make('api-documentation::documentation', ['version' => $version]);
     }
 
-    public function file(string $version)
+    public function file(string $version, string $file = 'file')
     {
+        // if it's not the main spec (file), then a reference
+        if ($file !== 'file') {
+            $version = "{$version}/{$file}";
+        }
+
+        if (strstr($version, '/')) {
+            $parameters = explode('/', $version);
+            array_shift($parameters);
+            $version = implode('/', $parameters);
+        }
+
         if ( ! File::exists($version)) {
             throw new NotFoundHttpException;
         }

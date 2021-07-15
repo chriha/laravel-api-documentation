@@ -7,6 +7,11 @@ class File
 
     public static function name(string $version) : string
     {
+        // allow references inside the spec
+        if (strstr($version, '.yml') || strstr($version, '.yaml')) {
+            return $version;
+        }
+
         return str_replace('[version]', $version, config('api-documentation.specifications.format'));
     }
 

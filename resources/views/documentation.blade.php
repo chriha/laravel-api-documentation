@@ -15,7 +15,7 @@
     window.onload = function() {
         // Begin Swagger UI call region
         const ui = SwaggerUIBundle({
-            url: "{{ route('api-documentation.docs.file', $version) }}",
+            url: "{{ route('api-documentation.docs.file', [$version, 'file']) }}",
             dom_id: '#swagger-ui',
             deepLinking: true,
             presets: [
