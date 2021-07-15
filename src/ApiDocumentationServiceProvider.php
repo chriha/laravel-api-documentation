@@ -10,9 +10,13 @@ class ApiDocumentationServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerPublishables();
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'api-documentation');
-        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
         $this->loadRoutesFrom(__DIR__ . '/../routes/api.php');
+
+        if (empty(config('api-documentation.environments'))
+            || in_array(app()->environment(), config('api-documentation.environments'))) {
+            $this->loadViewsFrom(__DIR__ . '/../resources/views', 'api-documentation');
+            $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
+        }
     }
 
     public function register()

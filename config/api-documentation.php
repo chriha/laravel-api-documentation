@@ -46,5 +46,9 @@ return [
          * Default: web
          */
         'documentation' => ['web']
-    ]
+    ],
+    /**
+     * Specify all the environments, in which the documentation should be available
+     */
+    'environments' => [],
 ];
