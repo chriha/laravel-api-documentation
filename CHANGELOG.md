@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/chriha/laravel-api-documentation/compare/v1.2.2...v1.3.0) (2021-07-15)
+
+
+### Features
+
+* add ability to restrict access to documentation by env ([d203257](https://github.com/chriha/laravel-api-documentation/commit/d20325751dfb71019645d645ae405ae437d9d047))
+
 ## [1.2.2](https://github.com/chriha/laravel-api-documentation/compare/v1.2.1...v1.2.2) (2021-07-15)
 
 
