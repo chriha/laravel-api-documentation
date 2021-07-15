@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/chriha/laravel-api-documentation/compare/v1.2.0...v1.2.1) (2021-07-14)
+
+
+### Bug Fixes
+
+* allow PHP 8 ([b5520cd](https://github.com/chriha/laravel-api-documentation/commit/b5520cd31ef2bcbedc0dd22c3ca883b2bbc6ed24))
+
 # [1.2.0](https://github.com/chriha/laravel-api-documentation/compare/v1.1.0...v1.2.0) (2021-05-05)
 
 
