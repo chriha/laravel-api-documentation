@@ -2,6 +2,7 @@
 
 namespace Chriha\ApiDocumentation;
 
+use Chriha\ApiDocumentation\Commands\ClearApiDocumentationCache;
 use Illuminate\Support\ServiceProvider;
 
 class ApiDocumentationServiceProvider extends ServiceProvider
@@ -22,6 +23,10 @@ class ApiDocumentationServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(__DIR__ . '/../config/api-documentation.php', 'api-documentation');
+
+        $this->commands([
+            ClearApiDocumentationCache::class
+        ]);
     }
 
     protected function registerPublishables()
