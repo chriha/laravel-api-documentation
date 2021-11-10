@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/chriha/laravel-api-documentation/compare/v1.3.0...v1.4.0) (2021-11-10)
+
+
+### Features
+
+* add command to clear cache ([cdf546c](https://github.com/chriha/laravel-api-documentation/commit/cdf546cf6799233d81ca790c50e8510d77ca0117))
+
 # [1.3.0](https://github.com/chriha/laravel-api-documentation/compare/v1.2.2...v1.3.0) (2021-07-15)
 
 
