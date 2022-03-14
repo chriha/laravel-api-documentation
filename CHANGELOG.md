@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/chriha/laravel-api-documentation/compare/v1.4.0...v2.0.0) (2022-03-14)
+
+
+### Code Refactoring
+
+* upgrade packages ([0c3f0de](https://github.com/chriha/laravel-api-documentation/commit/0c3f0de363cdbcedff61b8719dc86b49d8774fc4))
+
+
+### BREAKING CHANGES
+
+* PHP version and Illuminate packages
+
 # [1.4.0](https://github.com/chriha/laravel-api-documentation/compare/v1.3.0...v1.4.0) (2021-11-10)
 
 
