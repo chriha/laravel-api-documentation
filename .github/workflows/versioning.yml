@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 16
       - name: Install Plugins
         run: npm i @semantic-release/changelog @semantic-release/git @semantic-release/exec -D
       - name: Create Release
