@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/chriha/laravel-api-documentation/compare/v2.0.0...v2.0.1) (2023-03-22)
+
+
+### Bug Fixes
+
+* code style, Github workflow ([711a946](https://github.com/chriha/laravel-api-documentation/commit/711a946ffa4680742c21fa7c06ddb9b7d9e7aeff))
+
 # [2.0.0](https://github.com/chriha/laravel-api-documentation/compare/v1.4.0...v2.0.0) (2022-03-14)
 
 
