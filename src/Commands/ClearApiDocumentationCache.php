@@ -2,13 +2,11 @@
 
 namespace Chriha\ApiDocumentation\Commands;
 
-use DirectoryIterator;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Cache;
 
 class ClearApiDocumentationCache extends Command
 {
-
     /**
      * The name and signature of the console command.
      *
@@ -36,10 +34,8 @@ class ClearApiDocumentationCache extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return int
      */
-    public function handle()
+    public function handle(): int
     {
         Cache::forget("api.{$this->argument('version')}.index");
 

@@ -7,7 +7,7 @@ return [
          *
          * Default: ./resources/api/...
          */
-        'path'   => resource_path('api'),
+        'path' => resource_path('api'),
         /**
          * Here you can change the format of those files. For example,
          * if you would like to change the naming to "api-v1.yml", the
@@ -24,20 +24,20 @@ return [
          * want to be visible in the info endpoint (e.g. /api/v1) using
          * "dot" notation.
          */
-        'hide'   => [
+        'hide' => [
             //'v1' => [
             //    'contact.email',
             //    'description',
             //]
         ],
     ],
-    'middleware'     => [
+    'middleware' => [
         /**
          * Middleware to the API info endpoints: /api/{version}
          *
          * Default: api
          */
-        'api'           => ['api'],
+        'api' => ['api'],
         /**
          * Middleware to the documentation and file endpoints:
          * - /docs/api/{version}
@@ -45,7 +45,7 @@ return [
          *
          * Default: web
          */
-        'documentation' => ['web']
+        'documentation' => ['web'],
     ],
     /**
      * Specify all the environments, in which the documentation should be available

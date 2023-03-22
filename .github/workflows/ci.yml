@@ -1,4 +1,4 @@
-name: Versioning
+name: CI
 
 on:
   push:
@@ -6,8 +6,17 @@ on:
       - main
 
 jobs:
+  code-style:
+    name: Code Style
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Run Pint
+        run: ./vendor/bin/pint --test
   versioning:
     name: Create New Version
+    needs: [code-style]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -15,7 +24,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: 16
+          node-version: 18
       - name: Install Plugins
         run: npm i @semantic-release/changelog @semantic-release/git @semantic-release/exec -D
       - name: Create Release

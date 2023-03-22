@@ -7,8 +7,7 @@ use Illuminate\Support\ServiceProvider;
 
 class ApiDocumentationServiceProvider extends ServiceProvider
 {
-
-    public function boot()
+    public function boot(): void
     {
         $this->registerPublishables();
         $this->loadRoutesFrom(__DIR__ . '/../routes/api.php');
@@ -20,16 +19,16 @@ class ApiDocumentationServiceProvider extends ServiceProvider
         }
     }
 
-    public function register()
+    public function register(): void
     {
         $this->mergeConfigFrom(__DIR__ . '/../config/api-documentation.php', 'api-documentation');
 
         $this->commands([
-            ClearApiDocumentationCache::class
+            ClearApiDocumentationCache::class,
         ]);
     }
 
-    protected function registerPublishables()
+    protected function registerPublishables(): void
     {
         $this->publishes(
             [
@@ -45,5 +44,4 @@ class ApiDocumentationServiceProvider extends ServiceProvider
             'views'
         );
     }
-
 }

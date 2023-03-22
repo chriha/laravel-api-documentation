@@ -12,7 +12,6 @@ use Symfony\Component\Yaml\Yaml;
 
 class ApiController extends BaseController
 {
-
     public function __construct()
     {
         if (! empty(config('api-documentation.middleware.api'))) {
@@ -20,7 +19,7 @@ class ApiController extends BaseController
         }
     }
 
-    public function index(string $version) : JsonResponse
+    public function index(string $version): JsonResponse
     {
         return Cache::rememberForever("api.{$version}.index", function () use ($version) {
             if (! File::exists($version)) {
@@ -36,5 +35,4 @@ class ApiController extends BaseController
             return new JsonResponse($spec['info'] ?? ['version' => 'undefined']);
         });
     }
-
 }

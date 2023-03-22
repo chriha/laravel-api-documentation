@@ -10,17 +10,16 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class DocumentationController extends BaseController
 {
-
     public function __construct()
     {
-        if ( ! empty(config('api-documentation.middleware.documentation'))) {
+        if (! empty(config('api-documentation.middleware.documentation'))) {
             $this->middleware(config('api-documentation.middleware.documentation'));
         }
     }
 
-    public function index(string $version) : ViewContract
+    public function index(string $version): ViewContract
     {
-        if ( ! File::exists($version)) {
+        if (! File::exists($version)) {
             throw new NotFoundHttpException;
         }
 
@@ -40,12 +39,11 @@ class DocumentationController extends BaseController
             $version = implode('/', $parameters);
         }
 
-        if ( ! File::exists($version)) {
+        if (! File::exists($version)) {
             throw new NotFoundHttpException;
         }
 
         return response(file_get_contents(File::path($version)))
             ->withHeaders(['Content-Type' => 'text/yaml']);
     }
-
 }

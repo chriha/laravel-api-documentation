@@ -7,11 +7,10 @@ use Illuminate\Foundation\Application;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
-
     /**
      * This method is called before each test.
      */
-    protected function setUp() : void
+    protected function setUp(): void
     {
         parent::setUp();
     }
@@ -20,13 +19,11 @@ class TestCase extends \Orchestra\Testbench\TestCase
      * Get package providers.
      *
      * @param Application $app
-     *
-     * @return array
      */
-    protected function getPackageProviders($app)
+    protected function getPackageProviders($app): array
     {
         return [
-            ApiDocumentationServiceProvider::class
+            ApiDocumentationServiceProvider::class,
         ];
     }
 
@@ -34,15 +31,13 @@ class TestCase extends \Orchestra\Testbench\TestCase
      * Define environment setup.
      *
      * @param Application $app
-     *
-     * @return void
      */
-    protected function getEnvironmentSetUp($app)
+    protected function getEnvironmentSetUp($app): void
     {
         // Define your environment setup.
     }
 
-    public function createApplication()
+    public function createApplication(): void
     {
         // TODO: Implement createApplication() method.
     }
