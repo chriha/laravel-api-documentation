@@ -1,3 +1,11 @@
+## [2.0.2](https://github.com/chriha/laravel-api-documentation/compare/v2.0.1...v2.0.2) (2024-04-10)
+
+
+### Bug Fixes
+
+* ignore composer lock file ([fcddfe8](https://github.com/chriha/laravel-api-documentation/commit/fcddfe8715fa4079f08bced6ecd5b37079fca24b))
+* remove unknown phpcs rule ([a2657f4](https://github.com/chriha/laravel-api-documentation/commit/a2657f47016cf76648a1e5ee96560ee0376e8ef7))
+
 ## [2.0.1](https://github.com/chriha/laravel-api-documentation/compare/v2.0.0...v2.0.1) (2023-03-22)
 
 
