@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/chriha/laravel-api-documentation/compare/v2.0.2...v2.0.3) (2024-04-10)
+
+
+### Bug Fixes
+
+* bump symfony/yaml for laravel 11 compatibility ([79aaefa](https://github.com/chriha/laravel-api-documentation/commit/79aaefa072621c99c0124442a571efcf19f9dd93))
+
 ## [2.0.2](https://github.com/chriha/laravel-api-documentation/compare/v2.0.1...v2.0.2) (2024-04-10)
 
 
