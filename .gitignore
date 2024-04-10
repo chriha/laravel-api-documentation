@@ -8,3 +8,4 @@
 *.sublime-*
 *.log
 package-lock.json
+composer.lock
