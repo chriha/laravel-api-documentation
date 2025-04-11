@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/chriha/laravel-api-documentation/compare/v2.0.3...v2.1.0) (2025-04-11)
+
+
+### Features
+
+* update phpunit to v10 ([3c8c990](https://github.com/chriha/laravel-api-documentation/commit/3c8c990752d6b05d1126eb350937d6ebb2f68595))
+
 ## [2.0.3](https://github.com/chriha/laravel-api-documentation/compare/v2.0.2...v2.0.3) (2024-04-10)
 
 
