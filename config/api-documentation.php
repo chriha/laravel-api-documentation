@@ -25,10 +25,10 @@ return [
          * "dot" notation.
          */
         'hide' => [
-            //'v1' => [
+            // 'v1' => [
             //    'contact.email',
             //    'description',
-            //]
+            // ]
         ],
     ],
     'middleware' => [
